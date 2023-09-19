@@ -12,6 +12,7 @@ C:\Users>cd <admin_user>
 Change into your admin user directory.
 
 C:\Users\nta007>**ntdsutil**
+
 ntdsutil: **activate instance ntds**
 
 Active instance set to "ntds".
